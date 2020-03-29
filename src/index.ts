@@ -1,5 +1,5 @@
-import {StoreApplication} from './application';
 import {ApplicationConfig} from '@loopback/core';
+import {StoreApplication} from './application';
 
 export {StoreApplication};
 
