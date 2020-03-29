@@ -26,6 +26,8 @@
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
     "start": "node -r source-map-support/register .",
+    "pm2:build": "pm2 start ecosystem.config.js --env production",
+    "stop": "pm2 stop ecosystem.config.js --env production",
     "prepublishOnly": "npm run test"
   },
   "repository": {
@@ -51,6 +53,7 @@
     "@loopback/rest-explorer": "^2.0.2",
     "@loopback/service-proxy": "^2.0.2",
     "loopback-connector-mysql": "^5.4.3",
+    "pm2": "^4.2.3",
     "tslib": "^1.10.0"
   },
   "devDependencies": {
